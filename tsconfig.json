@@ -16,6 +16,14 @@
     "lib": [
       "es2017",
       "dom"
-    ]
+    ],
+    "paths": {
+      "slide-toggle": [
+        "dist/slide-toggle"
+      ],
+      "slide-toggle/*": [
+        "dist/slide-toggle/*"
+      ]
+    }
   }
 }
