@@ -7,6 +7,7 @@
 Will trigger the `slide-toggle` project in `angular.json`
 
 ## Example Application
+`ng serve` to run the example application in order to demo the library.
 
 > General Angular instructions
 
