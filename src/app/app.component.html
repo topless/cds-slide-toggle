@@ -1,5 +1,10 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
+<div>
+  <h2>Simple example</h2>
   <cds-slide-toggle></cds-slide-toggle>
+
+  <h2>Customized example</h2>
+  <cds-slide-toggle [onText]="'ENABLED'" [offText]="'DISABLED'" [onColor]="'#2ecc71'" [value]="toggleValue" (valueChange)="toggleValue = $event"></cds-slide-toggle>
+  <span> The toggle value is {{toggleValue}}</span>
 </div>
 

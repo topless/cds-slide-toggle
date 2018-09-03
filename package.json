@@ -1,6 +1,7 @@
 {
   "name": "cds-slide-toggle-app",
   "version": "0.0.0",
+  "author": "Harun Urhan <harun.urhan@cern.ch>",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",

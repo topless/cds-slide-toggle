@@ -1,19 +1,29 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, Output, EventEmitter, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
   selector: 'cds-slide-toggle',
-  template: `
-    <p>
-      slide-toggle works!
-    </p>
-  `,
-  styles: []
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  templateUrl: './slide-toggle.component.html',
+  styleUrls: [
+    './slide-toggle.component.css'
+  ]
 })
-export class SlideToggleComponent implements OnInit {
+export class SlideToggleComponent {
 
-  constructor() { }
+  @Input() value = false;
+  @Input() onText = 'ON';
+  @Input() offText = 'OFF';
+  @Input() onColor = '#0088cc';
+  offColor = '#eceeef';
 
-  ngOnInit() {
+  @Output() valueChange = new EventEmitter<boolean>();
+
+  onToggle() {
+    this.value = !this.value;
+    this.valueChange.emit(this.value);
   }
 
+  get color(): string {
+    return this.value ? this.onColor : this.offColor;
+  }
 }
