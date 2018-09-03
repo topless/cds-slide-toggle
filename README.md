@@ -1,5 +1,15 @@
 # CdsSlideToggleApp
 
+> Specific instructions for library usage
+
+## Buidling the library
+`npm run-script build:lib`
+Will trigger the `slide-toggle` project in `angular.json`
+
+## Example Application
+
+> General Angular instructions
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.5.
 
 ## Development server
